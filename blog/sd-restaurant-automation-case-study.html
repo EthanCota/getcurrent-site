@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Restaurant Automation Case Study: Before and After (Illustrative) | Get Current AI</title>
+  <meta name="description" content="An illustrative case study showing what AI phone automation looks like for a San Diego full-service restaurant — before, during, and after, with honest outcome ranges. Not a real client.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://getcurrentai.com/blog/sd-restaurant-automation-case-study">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="https://getcurrentai.com/blog/sd-restaurant-automation-case-study">
+  <meta property="og:title"       content="Restaurant Automation Case Study: Before and After (Illustrative)">
+  <meta property="og:description" content="What AI phone automation looks like for a San Diego full-service restaurant — before, during, and after, with honest outcome ranges.">
+  <meta property="og:site_name"   content="Get Current AI">
+  <meta property="og:image"        content="https://getcurrentai.com/assets/og-card.svg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Restaurant Automation Case Study: Before and After (Illustrative)">
+  <meta name="twitter:description" content="AI phone automation for a San Diego restaurant — before/after with honest outcome ranges. Illustrative scenario, not a real client.">
+  <meta name="twitter:image"       content="https://getcurrentai.com/assets/og-card.svg">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="shortcut icon" href="../assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Restaurant Automation Case Study: Before and After (Illustrative)",
+    "description": "An illustrative case study showing what AI phone automation looks like for a San Diego full-service restaurant — before, during, and after, with honest outcome ranges. Not a real client.",
+    "url": "https://getcurrentai.com/blog/sd-restaurant-automation-case-study",
+    "datePublished": "2026-06-13",
+    "dateModified": "2026-06-13",
+    "author": {
+      "@type": "Person",
+      "name": "Ethan Cota"
+    },
+    "publisher": {
+      "@type": "LocalBusiness",
+      "name": "Get Current AI",
+      "url": "https://getcurrentai.com",
+      "email": "hello@getcurrentai.com",
+      "areaServed": { "@type": "City", "name": "San Diego" }
+    },
+    "about": [
+      { "@type": "Thing", "name": "restaurant automation case study" },
+      { "@type": "Thing", "name": "AI phone automation restaurant" },
+      { "@type": "Thing", "name": "San Diego restaurant technology" }
+    ]
+  }
+  </script>
+
+  <style>
+    .illustrative-banner {
+      background: #fef9ec;
+      border: 2px solid #e6c84a;
+      border-radius: 6px;
+      padding: var(--space-4) var(--space-6);
+      margin-bottom: var(--space-8);
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+      color: var(--color-text);
+    }
+    .illustrative-banner strong {
+      display: block;
+      margin-bottom: var(--space-1);
+      font-size: var(--text-base);
+    }
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+      margin: var(--space-8) 0;
+    }
+    @media (max-width: 600px) {
+      .before-after-grid { grid-template-columns: 1fr; }
+    }
+    .before-box, .after-box {
+      border-radius: 6px;
+      padding: var(--space-6);
+    }
+    .before-box {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+    }
+    .after-box {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+    }
+    .before-box h3, .after-box h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      font-weight: var(--weight-semibold);
+      margin-bottom: var(--space-4);
+    }
+    .before-box h3 { color: #dc2626; }
+    .after-box h3 { color: #16a34a; }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      font-size: var(--text-sm);
+    }
+    .metric-row:last-child { border-bottom: none; }
+    .metric-label { color: var(--color-text); }
+    .metric-value { font-weight: var(--weight-semibold); font-family: var(--font-mono); }
+    .outcomes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-sm);
+      margin: var(--space-6) 0;
+    }
+    .outcomes-table th {
+      background: var(--color-ink);
+      color: var(--color-white);
+      padding: var(--space-3) var(--space-4);
+      text-align: left;
+    }
+    .outcomes-table td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .outcomes-table tr:nth-child(even) td { background: var(--color-bg-tint); }
+    .build-cost-box {
+      background: var(--color-bg-tint);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: var(--space-6);
+      margin: var(--space-8) 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <header class="site-nav" role="banner">
+    <div class="site-nav__inner">
+      <a href="../" class="site-nav__wordmark" aria-label="Get Current AI — home">
+        Get Current AI
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav__links" id="nav-links">
+          <li><a href="../index.html#how-it-works">How It Works</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../audit.html">Book Audit</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="site-nav__cta">
+        <a href="../audit.html" class="btn btn--primary">Start with an Audit</a>
+      </div>
+      <button class="site-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+        <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="site-nav__menu" id="nav-menu" role="navigation" aria-label="Mobile navigation">
+      <ul class="site-nav__links">
+        <li><a href="../index.html#how-it-works" onclick="closeMenu()">How It Works</a></li>
+        <li><a href="../services.html"            onclick="closeMenu()">Services</a></li>
+        <li><a href="../audit.html"               onclick="closeMenu()">Book Audit</a></li>
+        <li><a href="../about.html"               onclick="closeMenu()">About</a></li>
+        <li><a href="../blog/"                    onclick="closeMenu()">Blog</a></li>
+        <li><a href="../index.html#faq"           onclick="closeMenu()">FAQ</a></li>
+        <li><a href="../audit.html"               onclick="closeMenu()" class="btn btn--primary" style="display:inline-flex;margin-top:8px;">Start with an Audit</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- END NAV -->
+
+  <main id="main">
+
+    <!-- ARTICLE HEADER -->
+    <section style="background: var(--gradient-hero); border-bottom: 1px solid var(--color-border); padding: var(--space-16) 0 var(--space-12);" aria-labelledby="article-title">
+      <div class="container" style="max-width: var(--max-width-prose);">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-6);">
+          <ol style="list-style:none; display:flex; gap: var(--space-2); font-size: var(--text-sm); color: var(--color-text-muted);">
+            <li><a href="../" style="color: var(--color-link);">Home</a></li>
+            <li aria-hidden="true" style="color: var(--color-border);">/</li>
+            <li><a href="./" style="color: var(--color-link);">Blog</a></li>
+            <li aria-hidden="true" style="color: var(--color-border);">/</li>
+            <li aria-current="page">Restaurant Case Study</li>
+          </ol>
+        </nav>
+        <span class="label" style="color: var(--color-text-muted); display:block; margin-bottom: var(--space-3);">Restaurants &middot; Case Study &middot; Illustrative</span>
+        <h1 id="article-title" style="font-family: var(--font-display); font-size: var(--text-2xl); line-height: var(--leading-snug); color: var(--color-heading); margin-bottom: var(--space-5);">
+          Restaurant Automation Before and After: What the Numbers Look Like
+        </h1>
+        <p style="font-size: var(--text-lg); color: var(--color-text); line-height: var(--leading-loose); max-width: 36rem; margin-bottom: var(--space-4);">
+          A walkthrough of what phone and reservation automation looks like for a typical San Diego full-service restaurant — the starting state, the build, and the realistic outcome ranges. Illustrative scenario.
+        </p>
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">By Ethan Cota &middot; June 2026 &middot; 10 min read</p>
+      </div>
+    </section>
+
+    <!-- ARTICLE BODY -->
+    <article style="padding: var(--space-12) 0;" aria-label="Article content">
+      <div class="container" style="max-width: var(--max-width-prose);">
+
+        <!-- ILLUSTRATIVE DISCLOSURE — prominent, top of content -->
+        <div class="illustrative-banner" role="note" aria-label="Illustrative scenario disclosure">
+          <strong>ILLUSTRATIVE SCENARIO — NOT A REAL CLIENT</strong>
+          This is a constructed example based on publicly documented patterns from the restaurant industry. The business, "Mesa Norte," is fictional. All numbers are modeled from published industry data, not from a live engagement. Outcome ranges reflect what independent sources report for comparable builds — not guarantees. Real results vary by restaurant size, call volume, staff adoption, and POS configuration.
+        </div>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-6);">
+          One of the most common questions we get from SD restaurant owners is: "What would this actually look like for me?" That's the right question. Instead of answering in the abstract, this post walks through a constructed scenario — a fictional restaurant called Mesa Norte — using the kinds of numbers and constraints we see consistently when talking to real SD restaurant operators.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-8);">
+          The scenario is honest about cost, build time, and realistic outcomes. It doesn't cherry-pick a best-case. It's meant to give you enough detail to have an informed conversation — not to sell you a build before you've thought it through.
+        </p>
+
+        <!-- THE RESTAURANT -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          The Restaurant: Mesa Norte (Illustrative)
+        </h2>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          Mesa Norte is a 65-seat full-service restaurant in North Park, San Diego. Open for lunch and dinner, five days a week. POS: Square for Restaurants. Reservations through OpenTable — but the owner still takes a significant volume of calls directly because OpenTable doesn't handle all inquiries (menu questions, large parties, gift cards, wait list).
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          The owner, Maria, manages the front-of-house personally. She does not have a dedicated phone-answering staff role. The host takes calls during service when possible; otherwise calls go to voicemail. Maria checks the voicemail in batches, usually twice a day.
+        </p>
+
+        <!-- BEFORE STATE -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          Before: The Starting State
+        </h2>
+
+        <div class="before-after-grid">
+          <div class="before-box">
+            <h3>Phone Problem</h3>
+            <div class="metric-row"><span class="metric-label">Inbound calls/week</span><span class="metric-value">~90</span></div>
+            <div class="metric-row"><span class="metric-label">Calls missed / voicemail</span><span class="metric-value">~30–40%</span></div>
+            <div class="metric-row"><span class="metric-label">Avg return call delay</span><span class="metric-value">4–8 hrs</span></div>
+            <div class="metric-row"><span class="metric-label">Lost reservations from missed calls</span><span class="metric-value">~8–12/week</span></div>
+          </div>
+          <div class="before-box">
+            <h3>No-Show Problem</h3>
+            <div class="metric-row"><span class="metric-label">Reservations/week</span><span class="metric-value">~60</span></div>
+            <div class="metric-row"><span class="metric-label">No-show rate</span><span class="metric-value">~12%</span></div>
+            <div class="metric-row"><span class="metric-label">No-shows/week</span><span class="metric-value">~7</span></div>
+            <div class="metric-row"><span class="metric-label">Avg cover value</span><span class="metric-value">$48</span></div>
+          </div>
+        </div>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          The rough weekly cost of these two problems: 10 lost reservations at $48 average cover × 2 covers per reservation = $960/week in missed revenue from unanswered calls. Seven no-shows at $48 × 2 covers = $672/week in empty seats. Total: roughly $1,600/week, or $6,400–7,000/month, if the assumptions hold.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-6);">
+          These are modeled assumptions, not measured data. Real automation projects start with a discovery call precisely to measure the actual numbers rather than estimate them. The point here is to show the structure of the analysis — not a guaranteed outcome figure.
+        </p>
+
+        <!-- INTERVENTION -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          The Intervention: What Got Built
+        </h2>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
+          Two workflows were built and connected to Mesa Norte's existing accounts. Maria owns all the accounts — Vapi, Twilio, OpenTable API. Nothing runs on the agency's infrastructure.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); font-weight: var(--weight-semibold); margin-bottom: var(--space-2);">Workflow 1: AI Voice Receptionist</p>
+        <ul style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-5); padding-left: var(--space-6);">
+          <li style="margin-bottom: var(--space-2);">Vapi voice agent answers all calls within 2 rings</li>
+          <li style="margin-bottom: var(--space-2);">Handles: hours, location, menu questions, reservation requests</li>
+          <li style="margin-bottom: var(--space-2);">Reservation requests route to OpenTable via API</li>
+          <li style="margin-bottom: var(--space-2);">Calls requiring human judgment (large parties &gt;8, complaints, gift cards) transferred to Maria's cell with a text summary</li>
+          <li style="margin-bottom: var(--space-2);">After-hours calls handled fully; reservation requests queued for morning</li>
+        </ul>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); font-weight: var(--weight-semibold); margin-bottom: var(--space-2);">Workflow 2: Automated No-Show Reduction Sequence</p>
+        <ul style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-6); padding-left: var(--space-6);">
+          <li style="margin-bottom: var(--space-2);">OpenTable reservation data polled via n8n every 4 hours</li>
+          <li style="margin-bottom: var(--space-2);">SMS confirmation sent 48 hours before reservation (Twilio)</li>
+          <li style="margin-bottom: var(--space-2);">Second SMS 4 hours before with one-tap confirm/cancel</li>
+          <li style="margin-bottom: var(--space-2);">Cancellations auto-release the table and trigger a waitlist SMS to next queued party</li>
+          <li style="margin-bottom: var(--space-2);">No-show outcomes logged to a simple Airtable base for Maria's weekly review</li>
+        </ul>
+
+        <div class="build-cost-box">
+          <h3 style="font-family: var(--font-display); font-size: var(--text-base); font-weight: var(--weight-semibold); margin-bottom: var(--space-4);">Build Cost — Mesa Norte Illustrative</h3>
+          <div class="metric-row"><span class="metric-label">Audit (discovery + report)</span><span class="metric-value">$2,500</span></div>
+          <div class="metric-row"><span class="metric-label">Voice receptionist build</span><span class="metric-value">$5,500</span></div>
+          <div class="metric-row"><span class="metric-label">No-show sequence build</span><span class="metric-value">$2,000</span></div>
+          <div class="metric-row"><span class="metric-label">Total one-time</span><span class="metric-value">$10,000</span></div>
+          <div class="metric-row"><span class="metric-label">Ongoing (Care retainer, monitoring + 2 hrs/mo changes)</span><span class="metric-value">$800/mo</span></div>
+          <div style="margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted); line-height: var(--leading-relaxed);">
+            Maria owns all accounts. API costs (Vapi, Twilio, OpenTable) are on her billing. Estimated at $80–120/month depending on call volume. Not included in retainer.
+          </div>
+        </div>
+
+        <!-- AFTER RESULTS -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          After: Realistic Outcome Ranges
+        </h2>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          The ranges below are based on published research on voice AI and SMS confirmation systems in comparable restaurant contexts. They represent plausible outcomes for this scenario — not guarantees. Actual results depend on call volume, staff adoption of the handoff protocol, and OpenTable configuration.
+        </p>
+
+        <div class="before-after-grid">
+          <div class="before-box">
+            <h3>Before</h3>
+            <div class="metric-row"><span class="metric-label">Missed call rate</span><span class="metric-value">30–40%</span></div>
+            <div class="metric-row"><span class="metric-label">No-show rate</span><span class="metric-value">~12%</span></div>
+            <div class="metric-row"><span class="metric-label">After-hours bookings</span><span class="metric-value">0</span></div>
+            <div class="metric-row"><span class="metric-label">Maria's phone time/week</span><span class="metric-value">~6 hrs</span></div>
+          </div>
+          <div class="after-box">
+            <h3>After (Estimated Range)</h3>
+            <div class="metric-row"><span class="metric-label">Missed call rate</span><span class="metric-value">&lt;5%</span></div>
+            <div class="metric-row"><span class="metric-label">No-show rate</span><span class="metric-value">6–9%</span></div>
+            <div class="metric-row"><span class="metric-label">After-hours bookings</span><span class="metric-value">3–8/week</span></div>
+            <div class="metric-row"><span class="metric-label">Maria's phone time/week</span><span class="metric-value">~1–2 hrs</span></div>
+          </div>
+        </div>
+
+        <div style="overflow-x:auto; margin: var(--space-8) 0;">
+          <table class="outcomes-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Conservative</th>
+                <th>Mid</th>
+                <th>Optimistic</th>
+                <th>Basis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>No-show rate reduction</td>
+                <td>20%</td>
+                <td>35%</td>
+                <td>50%</td>
+                <td>Industry SMS confirmation studies</td>
+              </tr>
+              <tr>
+                <td>Revenue recovered from no-shows (weekly)</td>
+                <td>$269</td>
+                <td>$470</td>
+                <td>$672</td>
+                <td>Modeled from starting state above</td>
+              </tr>
+              <tr>
+                <td>Additional reservations via recovered calls (weekly)</td>
+                <td>$384</td>
+                <td>$672</td>
+                <td>$960</td>
+                <td>30% of missed calls convert to reservations — conservative</td>
+              </tr>
+              <tr>
+                <td>Monthly revenue impact (combined)</td>
+                <td>$2,600</td>
+                <td>$4,600</td>
+                <td>$6,500</td>
+                <td>4.3 weeks × weekly combined</td>
+              </tr>
+              <tr>
+                <td>Break-even on $10K build (retainer excluded)</td>
+                <td>~4 months</td>
+                <td>~2.2 months</td>
+                <td>~1.5 months</td>
+                <td>$10K ÷ monthly impact</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: var(--leading-relaxed); margin-bottom: var(--space-6); font-style: italic;">
+          Note on no-show reduction source: Loman AI documented a 22% revenue lift for pizza operators using voice AI in a 2024 case study (published via Loman.ai). Separate academic literature on SMS reservation reminders documents 20–40% no-show reduction in restaurant settings. These are the bases for the ranges above — not this project.
+        </p>
+
+        <!-- WHAT DIDN'T WORK / HONEST CAVEATS -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          What Wouldn't Be Smooth
+        </h2>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          Real deployments have friction. Illustrative scenarios should name it honestly:
+        </p>
+
+        <ul style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-6); padding-left: var(--space-6);">
+          <li style="margin-bottom: var(--space-3);">
+            <strong>OpenTable API access</strong> — OpenTable's API is not fully open. Access for automated reservation writing requires a developer account and approval. This adds 2–4 weeks to the build timeline. Some configurations fall back to an n8n-to-OpenTable web form submission, which is more fragile. This needs to be scoped upfront.
+          </li>
+          <li style="margin-bottom: var(--space-3);">
+            <strong>Voice agent accent and edge cases</strong> — The first 2 weeks of a voice agent deployment require monitoring. Callers with heavy accents, unusual requests, or fast speech can confuse the model. Human-transfer logic needs tuning. Plan for 4–6 hours of post-launch tuning in the first month.
+          </li>
+          <li style="margin-bottom: var(--space-3);">
+            <strong>Staff pushback</strong> — In restaurants where the host has historically "owned" the phone, introducing a voice agent creates friction. Maria's host needs a clear protocol for what the agent handles versus what requires a live transfer — and buy-in on why this improves their job, not threatens it.
+          </li>
+          <li style="margin-bottom: var(--space-3);">
+            <strong>Caller conversion rate</strong> — The revenue model assumes ~30% of recovered missed calls convert to a reservation. In practice, many missed calls are repeat callers, spam, or inquiries for information (not reservations). The real conversion rate may be closer to 15–20% without further segmentation.
+          </li>
+        </ul>
+
+        <!-- WHAT THIS TELLS YOU -->
+        <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-border);">
+          What This Scenario Tells You
+        </h2>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          For a 65-seat SD restaurant losing 30–40% of inbound calls and running a 12% no-show rate, the financial case for automation is real. The math works at the conservative end. The build pays for itself in under four months even with pessimistic conversion assumptions.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+          The bigger unlock is Maria's time. Six hours per week of phone management at owner-equivalent hourly value ($50–75/hr) is $1,200–1,800/month in recovered time. That's not revenue — it's margin improvement and decision-bandwidth.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); margin-bottom: var(--space-8);">
+          None of this is guaranteed for your restaurant specifically. It depends on your actual call volume, your no-show rate, your POS, and your staff's willingness to adopt the handoff protocol. The right first step is to measure the actual numbers — not estimate them from a blog post.
+        </p>
+
+        <!-- CTA -->
+        <div style="padding: var(--space-8); border: 2px solid var(--color-border); border-radius: 8px; text-align:center; margin-bottom: var(--space-6);">
+          <h2 style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-3);">
+            What do your numbers actually look like?
+          </h2>
+          <p style="font-size: var(--text-base); color: var(--color-text); line-height: var(--leading-relaxed); max-width: 32rem; margin: 0 auto var(--space-6);">
+            The Restaurant Operations Audit starts with a 90-minute call where we measure your actual call volume, missed-call rate, and no-show rate. You get a written report with your specific numbers — not modeled estimates. $2,500. You own the report.
+          </p>
+          <a href="../audit.html" class="btn btn--primary">Book the Restaurant Audit</a>
+        </div>
+
+        <!-- DISCLOSURE footer repeat -->
+        <div class="illustrative-banner" role="note" aria-label="Illustrative scenario disclosure repeat">
+          <strong>Disclosure reminder</strong>
+          Mesa Norte is a fictional business. All numbers in this post are modeled from public industry data, not from a live Get Current AI engagement. This is an illustrative scenario only. No real client results are represented here. Get Current AI has 0 paying clients as of the date of publication. We publish this scenario to give prospective clients a concrete framework for evaluating their own situation, not to imply real-world proof we do not have.
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background: var(--color-ink); color: var(--color-bg-tint); padding: var(--space-12) 0;" role="contentinfo">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-8); justify-content: space-between; align-items: flex-start;">
+        <div>
+          <p style="font-family: var(--font-display); font-size: var(--text-lg); font-weight: var(--weight-semibold); color: var(--color-white); margin-bottom: var(--space-2);">Get Current AI</p>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); max-width: 22rem; line-height: var(--leading-relaxed);">
+            Workflow automation for San Diego small businesses.<br>
+            Fixed prices. You own the code.
+          </p>
+        </div>
+        <div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-2);">
+            <a href="mailto:hello@getcurrentai.com" style="color: var(--color-bg-tint);">hello@getcurrentai.com</a>
+          </p>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted);">San Diego, CA</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: var(--space-8); padding-top: var(--space-6); font-size: var(--text-sm); color: var(--color-text-muted);">
+        &copy; 2026 Get Current AI. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu   = document.getElementById('nav-menu');
+    function closeMenu() {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  </script>
+
+</body>
+</html>
