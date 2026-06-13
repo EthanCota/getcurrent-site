@@ -341,6 +341,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="audit.html" aria-current="page">Book Audit</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/">Blog</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -360,7 +361,8 @@
         <li><a href="index.html#how-it-works" onclick="closeMenu()">How It Works</a></li>
         <li><a href="services.html"            onclick="closeMenu()">Services</a></li>
         <li><a href="audit.html"               onclick="closeMenu()">Book Audit</a></li>
-        <li><a href="about.html"         onclick="closeMenu()">About</a></li>
+        <li><a href="about.html"               onclick="closeMenu()">About</a></li>
+        <li><a href="blog/"                    onclick="closeMenu()">Blog</a></li>
         <li><a href="index.html#faq"           onclick="closeMenu()">FAQ</a></li>
         <li><a href="#book"                    onclick="closeMenu()" class="btn btn--primary" style="display:inline-flex;margin-top:8px;">Book the Audit</a></li>
       </ul>
@@ -969,6 +971,13 @@
           </ul>
         </nav>
       </div>
+      <!-- slim email capture — staged Tally endpoint; see ops/ACCOUNTS-LEDGER.md -->
+      <div style="border-top: 1px solid rgba(255,255,255,0.08); padding: var(--space-8) 0; text-align:center;">
+        <p style="color: rgba(255,255,255,0.5); font-size: var(--text-sm); margin-bottom: var(--space-4);">
+          One workflow tip per week for San Diego owners —
+          <a href="/#newsletter" style="color: rgba(255,255,255,0.7); text-decoration: underline;">subscribe free</a>
+        </p>
+      </div>
       <div class="site-footer__bottom">
         <p>&copy; 2026 Get Current AI · San Diego, CA · All rights reserved.</p>
         <p><a href="mailto:hello@getcurrentai.com" style="color: rgba(255,255,255,0.4); text-decoration: none;">hello@getcurrentai.com</a></p>
@@ -1026,6 +1035,13 @@
       }
     })();
   </script>
+
+  <!-- ── CLOUDFLARE WEB ANALYTICS ──────────────────────────────
+       TOKEN STAGED — replace REPLACE_WITH_CF_BEACON_TOKEN
+       Signup steps → ops/ACCOUNTS-LEDGER.md
+  ──────────────────────────────────────────────────────────────── -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "REPLACE_WITH_CF_BEACON_TOKEN"}'></script>
 
 </body>
 </html>

@@ -95,6 +95,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="audit.html">Book Audit</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/">Blog</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -120,6 +121,7 @@
         <li><a href="services.html" onclick="closeMenu()">Services</a></li>
         <li><a href="audit.html"    onclick="closeMenu()">Book Audit</a></li>
         <li><a href="about.html"    onclick="closeMenu()">About</a></li>
+        <li><a href="blog/"         onclick="closeMenu()">Blog</a></li>
         <li><a href="#faq"          onclick="closeMenu()">FAQ</a></li>
         <li><a href="audit.html"    onclick="closeMenu()" class="btn btn--primary" style="display:inline-flex;margin-top:8px;">Start with an Audit</a></li>
       </ul>
@@ -650,6 +652,54 @@
       </div>
     </section>
 
+    <!-- ── EMAIL CAPTURE ─────────────────────────────────── -->
+    <!-- UTM source: append ?utm_source=<channel>&utm_medium=email to inbound links -->
+    <!-- Endpoint is STAGED — uses Tally free embed (0 paid tier required).          -->
+    <!-- Signup + activation steps → ops/ACCOUNTS-LEDGER.md                         -->
+    <!-- To activate: sign up at tally.so → New Form → get embed URL →              -->
+    <!--   replace REPLACE_WITH_TALLY_FORM_ID below with your Tally form ID         -->
+    <section class="section" id="newsletter" aria-labelledby="newsletter-heading" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div style="max-width:520px; margin:0 auto; text-align:center;">
+          <span class="label" aria-hidden="true">Free resource</span>
+          <h2 id="newsletter-heading" style="margin-top: var(--space-3);">One workflow tip per week, built for San Diego owners</h2>
+          <p class="text-lead" style="margin-bottom: var(--space-6);">
+            Short. Practical. No upsell. We show the automation, explain the ROI math, and walk away. Unsubscribe anytime.
+          </p>
+          <!-- STAGED: replace REPLACE_WITH_TALLY_FORM_ID with real Tally form ID -->
+          <form
+            class="form"
+            action="https://tally.so/r/REPLACE_WITH_TALLY_FORM_ID"
+            method="POST"
+            target="_blank"
+            aria-label="Email newsletter signup"
+            id="newsletter-form"
+            data-utm-source="website"
+            data-utm-medium="organic"
+          >
+            <div class="form__row form__row--inline" style="justify-content:center; gap: var(--space-3);">
+              <div class="form__field" style="flex:1; max-width:300px;">
+                <label for="nl-email" class="form__label visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="nl-email"
+                  name="email"
+                  class="form__input"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+              <button type="submit" class="btn btn--primary">Get the tips</button>
+            </div>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-3);">
+              San Diego small business focus. No spam. Unsubscribe with one click.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- ── CONTACT ───────────────────────────────────────── -->
     <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
@@ -859,6 +909,17 @@
       });
     });
   </script>
+
+  <!-- ── CLOUDFLARE WEB ANALYTICS ──────────────────────────────
+       Free, privacy-first, no cookies, GDPR-friendly.
+       TOKEN IS STAGED — replace REPLACE_WITH_CF_BEACON_TOKEN with
+       the token from: dash.cloudflare.com → Web Analytics → Add Site.
+       UTM note: traffic source is visible in CF dashboard; append
+       ?utm_source=<channel>&utm_medium=<type> to links you share.
+       Signup steps → ops/ACCOUNTS-LEDGER.md
+  ──────────────────────────────────────────────────────────────── -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "REPLACE_WITH_CF_BEACON_TOKEN"}'></script>
 
 </body>
 </html>
