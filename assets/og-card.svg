@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- v3: Warm, editorial. Parchment bg + hero horizon gradient. Marine accent. No glassmorphism. -->
+  <!-- Background: Parchment -->
+  <rect width="1200" height="630" fill="#FAF7F2"/>
+  <!-- Hero horizon gradient overlay: warm amber-cream to pale sky -->
+  <defs>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF6E8"/>
+      <stop offset="55%" stop-color="#EEF5F9"/>
+      <stop offset="100%" stop-color="#E8F2F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#hero)"/>
+
+  <!-- 4px Marine accent bar top -->
+  <rect width="1200" height="4" fill="#1A6B8A"/>
+
+  <!-- Left content zone -->
+  <!-- Overline label -->
+  <text x="80" y="200"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="600"
+        letter-spacing="0.08em"
+        fill="#0F4A63"
+        style="text-transform: uppercase;">SAN DIEGO · BUSINESS AUTOMATION</text>
+
+  <!-- Wordmark: Get Current AI — serif display -->
+  <text x="80" y="298"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="700"
+        fill="#1C1A16" letter-spacing="-0.01em">Get Current AI</text>
+
+  <!-- Tagline — two lines, generous size -->
+  <text x="80" y="364"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="26" font-weight="400"
+        fill="#3D3830">Business automation built for real operators.</text>
+  <text x="80" y="400"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="26" font-weight="400"
+        fill="#3D3830">Systems you own.</text>
+
+  <!-- Domain -->
+  <text x="80" y="480"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="21" font-weight="600"
+        fill="#0F4A63" letter-spacing="0.04em">getcurrentai.com</text>
+
+  <!-- Right side: solid warm-white card with visible border — no glass -->
+  <rect x="790" y="200" width="340" height="200" rx="8"
+        fill="#FFFFFF"
+        stroke="#E8E2D9" stroke-width="1.5"/>
+  <!-- Marine top strip on card -->
+  <rect x="790" y="200" width="340" height="4" rx="2" fill="#1A6B8A"/>
+
+  <text x="960" y="268"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13" font-weight="600"
+        fill="#7A7267" letter-spacing="0.08em"
+        text-anchor="middle"
+        style="text-transform: uppercase;">OPERATIONS AUDIT</text>
+  <text x="960" y="332"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="700"
+        fill="#1C1A16" text-anchor="middle">$1,500</text>
+  <text x="960" y="374"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="400"
+        fill="#7A7267" text-anchor="middle">Published prices · Client-owned code</text>
+
+  <!-- Bottom Marine accent bar -->
+  <rect y="626" width="1200" height="4" fill="#1A6B8A"/>
+</svg>
