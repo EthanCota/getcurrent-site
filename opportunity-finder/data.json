@@ -1,0 +1,557 @@
+{
+  "accounting-and-bookkeeping": {
+    "label": "Accounting & Bookkeeping",
+    "sd_count": 229,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "High",
+    "time_saved_est": "3\u20138 hrs/week",
+    "top_processes": [
+      {
+        "name": "Manage service billing",
+        "what_it_does": "Automate recurring invoices, payment reminders, and billing reconciliation so your team spends less time chasing money and more time doing work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Conduct quality assurance reviews of customer interactions",
+        "what_it_does": "Use AI to score call recordings and chat transcripts against a rubric \u2014 surface coaching gaps without manual review of every interaction.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      }
+    ],
+    "honest_opportunity_note": "Accounting shops run on repetitive billing cycles and intake checklists. A $7,500 billing-automation build typically eliminates 3\u20135 hrs/week of manual invoice chasing \u2014 the ROI math is straightforward once you know your hourly rate.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "auto-repair": {
+    "label": "Auto Repair",
+    "sd_count": 134,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service billing",
+        "what_it_does": "Automate recurring invoices, payment reminders, and billing reconciliation so your team spends less time chasing money and more time doing work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Identify and schedule resources to meet service requirements",
+        "what_it_does": "Connect your booking system to your team calendar and skills matrix so the right person is auto-assigned to each job with minimal dispatcher effort.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Shops like yours lose jobs when the phone goes unanswered mid-repair. A missed-call text-back + digital intake flow is a $7,500 build that routes every inquiry without pulling a technician off a car.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "chiropractic-offices": {
+    "label": "Chiropractic Offices",
+    "sd_count": 206,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and manage media plans",
+        "what_it_does": "Automate repeatable steps in 'Develop and manage media plans' to reduce manual effort and give your team time back for higher-value work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Most chiro offices still use phone tag for new-patient intake. A structured digital intake + automated appointment confirmation is a $7,500 build that cuts no-shows and pre-qualifies patients before they arrive.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "cleaning-janitorial": {
+    "label": "Cleaning & Janitorial",
+    "sd_count": 3103,
+    "sd_count_note": "Broader NAICS family count (exact code = 0 in DB)",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Develop and train service delivery workforce",
+        "what_it_does": "Automate onboarding checklists, training reminders, and certification tracking so new hires reach full productivity faster with less manager hand-holding.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service staffing and scheduling",
+        "what_it_does": "Use demand forecasting tools to predict busy periods and auto-generate staffing suggestions \u2014 reduce over/under-staffing without manual spreadsheets.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Scheduling and dispatch are the highest-friction operations for cleaning companies. Workforce scheduling automation is achievable but requires integration work \u2014 a $1,500 audit maps exactly where manual scheduling is costing you jobs.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "dental": {
+    "label": "Dental",
+    "sd_count": 397,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and manage media plans",
+        "what_it_does": "Automate repeatable steps in 'Develop and manage media plans' to reduce manual effort and give your team time back for higher-value work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Dental offices lose revenue to scheduling gaps and insurance eligibility delays. Automated eligibility checks + intake confirmation is a $7,500 build that lets front-desk staff focus on patients, not paperwork.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "e-commerce": {
+    "label": "E-Commerce",
+    "sd_count": 366,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Process warehouse orders",
+        "what_it_does": "Automate order routing, pick-list generation, and shipment confirmation across your WMS and e-commerce storefront \u2014 cut fulfillment errors.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Ensure quality of service",
+        "what_it_does": "Build automated quality checkpoints into your service delivery pipeline so exceptions surface in real time rather than in customer complaints.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "E-commerce ops are process-rich but most automations require multi-system integration work. A $1,500 audit identifies which of your order/inventory workflows are quickest to automate and what the realistic time savings look like.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "fitness-gyms": {
+    "label": "Fitness & Gyms",
+    "sd_count": 264,
+    "sd_count_note": "Broader NAICS family count (exact code = 0 in DB)",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Define service delivery policies and standards",
+        "what_it_does": "Use AI to draft policy documentation from your existing practices, then automate distribution and acknowledgment tracking across your team.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Establish service delivery performance metrics and targets",
+        "what_it_does": "Auto-build a live dashboard pulling KPIs from your existing tools \u2014 replace manual weekly reporting with always-current visibility.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Fitness businesses run on member retention and scheduling efficiency. The automations here are achievable but require more integration effort than simpler verticals \u2014 a $1,500 audit maps your specific tech stack before we quote.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "insurance-agencies": {
+    "label": "Insurance Agencies",
+    "sd_count": 150,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Develop customer service segmentation and personas",
+        "what_it_does": "Automate repeatable steps in 'Develop customer service segmentation and personas' to reduce manual effort and give your team time back for higher-value work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Establish service policies and procedures",
+        "what_it_does": "Automate repeatable steps in 'Establish service policies and procedures' to reduce manual effort and give your team time back for higher-value work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Insurance agencies move slowly on intake because most still use email + PDF. Automating client intake and CRM pipeline updates is a $7,500 build that lets producers focus on relationships, not data entry.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "med-spa": {
+    "label": "Med Spa",
+    "sd_count": 193,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and train service delivery workforce",
+        "what_it_does": "Automate onboarding checklists, training reminders, and certification tracking so new hires reach full productivity faster with less manager hand-holding.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Med spas need booking, billing, and post-visit follow-up to run as one flow. The automations here are solid wins but require careful integration \u2014 a $1,500 audit scopes your exact stack and identifies the fastest first build.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "mental-health-practices": {
+    "label": "Mental Health Practices",
+    "sd_count": 482,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and manage media plans",
+        "what_it_does": "Automate repeatable steps in 'Develop and manage media plans' to reduce manual effort and give your team time back for higher-value work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Mental health practices carry high admin load: intake paperwork, insurance, scheduling. A digital intake + automated confirmation flow is a $7,500 build that cuts front-office overhead without touching clinical workflow.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "pest-control": {
+    "label": "Pest Control",
+    "sd_count": 55,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Medium",
+    "time_saved_est": "2\u20135 hrs/week",
+    "top_processes": [
+      {
+        "name": "Manage service billing",
+        "what_it_does": "Automate recurring invoices, payment reminders, and billing reconciliation so your team spends less time chasing money and more time doing work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Develop and train service delivery workforce",
+        "what_it_does": "Automate onboarding checklists, training reminders, and certification tracking so new hires reach full productivity faster with less manager hand-holding.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Pest control runs on recurring service agreements that generate predictable billing cycles \u2014 ideal for automation. A billing + scheduling build at $7,500 can reclaim the hours your office spends managing route changes and invoices.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "real-estate": {
+    "label": "Real Estate",
+    "sd_count": 269,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Evaluate and improve service delivery governance",
+        "what_it_does": "Schedule automated governance audits, collect compliance data from your systems, and surface gaps for review \u2014 without a manual audit cycle.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service staffing and scheduling",
+        "what_it_does": "Use demand forecasting tools to predict busy periods and auto-generate staffing suggestions \u2014 reduce over/under-staffing without manual spreadsheets.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Real estate offices deal with transaction coordination that is highly process-driven but varies by deal. A $1,500 audit maps which steps in your transaction cycle are repeatable enough to automate reliably.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "salons-barbers": {
+    "label": "Salons & Barbers",
+    "sd_count": 230,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "Exploratory",
+    "time_saved_est": "1\u20134 hrs/week",
+    "top_processes": [
+      {
+        "name": "Develop and manage service delivery plans",
+        "what_it_does": "Connect client intake data to your project or service plan templates \u2014 auto-populate scope, timeline, and resource blocks for each new engagement.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Develop and train service delivery workforce",
+        "what_it_does": "Automate onboarding checklists, training reminders, and certification tracking so new hires reach full productivity faster with less manager hand-holding.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Manage service delivery equipment and tools",
+        "what_it_does": "Track equipment availability, maintenance schedules, and utilization automatically \u2014 get alerts before gear becomes a scheduling bottleneck.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      }
+    ],
+    "honest_opportunity_note": "Salons lose revenue to no-shows and manual rebooking. An automated booking reminder + rebooking flow is achievable at the $7,500 single-workflow tier once we confirm your booking software has an API.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "tax-preparation-firms": {
+    "label": "Tax Preparation",
+    "sd_count": 168,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "High",
+    "time_saved_est": "3\u20138 hrs/week",
+    "top_processes": [
+      {
+        "name": "Manage service billing",
+        "what_it_does": "Automate recurring invoices, payment reminders, and billing reconciliation so your team spends less time chasing money and more time doing work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Conduct quality assurance reviews of customer interactions",
+        "what_it_does": "Use AI to score call recordings and chat transcripts against a rubric \u2014 surface coaching gaps without manual review of every interaction.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      }
+    ],
+    "honest_opportunity_note": "Tax prep is seasonal but document collection and billing are year-round. A $7,500 billing + intake automation build gives you the capacity to handle more clients per preparer without adding admin headcount.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  },
+  "veterinary": {
+    "label": "Veterinary",
+    "sd_count": 101,
+    "sd_count_note": "Exact NAICS match from SD businesses DB",
+    "opportunity_tier": "High",
+    "time_saved_est": "3\u20138 hrs/week",
+    "top_processes": [
+      {
+        "name": "Manage service billing",
+        "what_it_does": "Automate recurring invoices, payment reminders, and billing reconciliation so your team spends less time chasing money and more time doing work.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      },
+      {
+        "name": "Conduct quality assurance reviews of customer interactions",
+        "what_it_does": "Use AI to score call recordings and chat transcripts against a rubric \u2014 surface coaching gaps without manual review of every interaction.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": false,
+        "difficulty": "Medium complexity"
+      },
+      {
+        "name": "Confirm specific service requirements for each customer",
+        "what_it_does": "Replace back-and-forth intake emails with a structured digital intake flow that captures what you need upfront and pre-fills your scheduling system.",
+        "deliverable_recipe": "n8n workflow + client-hosted, BYOK",
+        "price_band": "$7,500 build / $1,500 audit",
+        "deployable": true,
+        "difficulty": "Quick win"
+      }
+    ],
+    "honest_opportunity_note": "Vet clinics handle high appointment volume with billing tied to every visit. Automating billing reconciliation + appointment intake is a $7,500 build that typically saves 3\u20136 hrs/week of front-desk time across a mid-size practice.",
+    "audit_price": 1500,
+    "build_entry_price": 7500,
+    "retainer_floor": 800
+  }
+}
