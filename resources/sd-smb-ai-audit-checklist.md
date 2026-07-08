@@ -1,6 +1,6 @@
 # The San Diego SMB Owner's AI-Automation Audit Checklist
 
-**Get Current AI · getcurrentai.com**
+**Baxter Solutions · baxter.solutions**
 
 *Use this before any vendor conversation. If you can't answer a question, that's a signal — not a failure.*
 
@@ -128,11 +128,11 @@ Count the checked boxes in each section:
 
 **Option A — Do it yourself.** Take your highest-scoring section and research the specific tools: n8n, Make, Zapier, Twilio, and your existing software's native automation features. Most of these sections have free-tier tools you can test.
 
-**Option B — Get a second opinion.** The Get Current AI Operations Audit ($1,500) is a 90-minute discovery call plus a written report. You'll get a prioritized list of automation opportunities, rough ROI estimates for each, and a named-stack recommendation (what to build with, in what order). No obligation to build anything. If the math doesn't work for your business, we'll tell you.
+**Option B — Get a second opinion.** The Baxter Solutions Operations Audit ($1,500) is a 90-minute discovery call plus a written report. You'll get a prioritized list of automation opportunities, rough ROI estimates for each, and a named-stack recommendation (what to build with, in what order). No obligation to build anything. If the math doesn't work for your business, we'll tell you.
 
-To book the audit: **getcurrentai.com/audit** or email **hello@getcurrentai.com**
+To book the audit: **baxter.solutions/audit** or email **ethan@baxter.solutions**
 
 ---
 
-*Get Current AI · San Diego, CA · getcurrentai.com*
+*Baxter Solutions · San Diego, CA · baxter.solutions*
 *This checklist is free to share. Don't sell it. Don't claim you wrote it.*

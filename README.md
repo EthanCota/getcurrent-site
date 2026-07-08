@@ -1,4 +1,4 @@
-# Get Current AI — Website
+# Baxter Solutions — Website
 
 Static HTML/CSS site. No build step, no framework, no bundler.
 
@@ -10,7 +10,7 @@ Static HTML/CSS site. No build step, no framework, no bundler.
 
 **v3 verified (2026-06-12):** Playwright full-page screenshots at 1280px + 390px for all 7 pages in screenshots/v3/. Zero console errors across all pages. Zero backdrop-filter/blur() declarations in CSS or HTML. Contrast: body text 10.88:1 (AAA), H1 on hero 16.15:1 (AAA), CTA button 5.98:1 (AA). ROI calculators verified — restaurant calc: $70,200 output at 50 missed calls/wk; VA calc: live payback section at $1,200/mo input. All page-specific CSS classes defined inline in source page. Prices match Offer Ladder v1 exactly. Niche balance: Standard Audit targets "Any SD small business"; restaurant is example vertical, not brand identity.
 **Expected live URL:** `https://<your-gh-username>.github.io/getcurrent-site/`
-**Custom domain target:** `https://getcurrentai.com` (once purchased and DNS configured)
+**Custom domain target:** `https://baxter.solutions` (once purchased and DNS configured)
 
 ---
 
@@ -31,7 +31,7 @@ website/
       site.css          Single stylesheet — design tokens v3 + all global components
     js/
       roi-calc.js       Vanilla JS ROI calculators (restaurant + VA TCO)
-  sitemap.xml           Sitemap for getcurrentai.com (includes thank-you.html)
+  sitemap.xml           Sitemap for baxter.solutions (includes thank-you.html)
   robots.txt            robots.txt pointing to sitemap
   deploy.sh             One-command deploy script (requires gh auth login first)
   screenshots/          Playwright verification screenshots
@@ -71,16 +71,16 @@ The script force-pushes to main and Pages redeploys automatically (typically 30�
 
 ---
 
-## Custom Domain Swap (when getcurrentai.com is purchased)
+## Custom Domain Swap (when baxter.solutions is purchased)
 
 1. Create a `CNAME` file in this directory:
    ```sh
-   echo "getcurrentai.com" > "/Users/baxter/claude/software projects/agency/website/CNAME"
+   echo "baxter.solutions" > "/Users/baxter/claude/software projects/agency/website/CNAME"
    ```
 
 2. Run `./deploy.sh` to push the CNAME file.
 
-3. In the GitHub repo Settings → Pages → Custom domain: type `getcurrentai.com` and save.
+3. In the GitHub repo Settings → Pages → Custom domain: type `baxter.solutions` and save.
 
 4. At your DNS registrar, add:
    - Four A records pointing `@` to GitHub Pages IPs:
@@ -95,10 +95,10 @@ The script force-pushes to main and Pages redeploys automatically (typically 30�
 5. Wait for DNS propagation (15 min–2 hrs). Then in the repo Pages settings,
    tick "Enforce HTTPS." Certificate provisioning takes ~15 additional minutes.
 
-6. Update canonical URLs in all HTML files from the github.io URL to `getcurrentai.com`:
+6. Update canonical URLs in all HTML files from the github.io URL to `baxter.solutions`:
    ```sh
    find "/Users/baxter/claude/software projects/agency/website" -name "*.html" \
-     -exec sed -i '' 's|https://[^.]*\.github\.io/getcurrent-site|https://getcurrentai.com|g' {} \;
+     -exec sed -i '' 's|https://[^.]*\.github\.io/getcurrent-site|https://baxter.solutions|g' {} \;
    ```
    Then redeploy: `./deploy.sh`
 
@@ -126,7 +126,7 @@ These must be resolved before the site is client-facing:
 | `index.html` contact section | `[VERIFY — add phone once business line acquired]` | Replace with phone number |
 | `about.html` contact section | Same phone placeholder | Same |
 | `audit.html` calendar block | Calendar embed placeholder | Replace with Calendly or Cal.com link |
-| All forms | `action="mailto:hello@getcurrentai.com"` | Replace with Formspree/Basin endpoint |
+| All forms | `action="mailto:ethan@baxter.solutions"` | Replace with Formspree/Basin endpoint |
 
 ---
 
@@ -154,5 +154,5 @@ Alternative: **Basin** (basin.com) — change `action` to Basin endpoint; `_next
 
 ```sh
 find "/Users/baxter/claude/software projects/agency/website" -type f \( -name "*.html" -o -name "*.css" \) \
-  -exec sed -i '' 's/Get Current AI/NEW NAME HERE/g; s/getcurrentai\.com/newdomain.com/g' {} \;
+  -exec sed -i '' 's/Baxter Solutions/NEW NAME HERE/g; s/getcurrentai\.com/newdomain.com/g' {} \;
 ```

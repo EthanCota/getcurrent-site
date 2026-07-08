@@ -24,11 +24,11 @@
         fill="#0F4A63"
         style="text-transform: uppercase;">SAN DIEGO · BUSINESS AUTOMATION</text>
 
-  <!-- Wordmark: Get Current AI — serif display -->
+  <!-- Wordmark: Baxter Solutions — serif display -->
   <text x="80" y="298"
         font-family="Georgia, 'Times New Roman', serif"
         font-size="72" font-weight="700"
-        fill="#1C1A16" letter-spacing="-0.01em">Get Current AI</text>
+        fill="#1C1A16" letter-spacing="-0.01em">Baxter Solutions</text>
 
   <!-- Tagline — two lines, generous size -->
   <text x="80" y="364"
@@ -44,7 +44,7 @@
   <text x="80" y="480"
         font-family="Arial, Helvetica, sans-serif"
         font-size="21" font-weight="600"
-        fill="#0F4A63" letter-spacing="0.04em">getcurrentai.com</text>
+        fill="#0F4A63" letter-spacing="0.04em">baxter.solutions</text>
 
   <!-- Right side: solid warm-white card with visible border — no glass -->
   <rect x="790" y="200" width="340" height="200" rx="8"

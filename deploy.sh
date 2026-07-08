@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# deploy.sh — One-command deploy for Get Current AI website to GitHub Pages
+# deploy.sh — One-command deploy for Baxter Solutions website to GitHub Pages
 #
 # Prerequisites:
 #   1. gh auth login   (run this first if not already authenticated)
@@ -17,9 +17,9 @@
 #   - Enables GitHub Pages from the main branch root
 #   - Polls until the site is live (up to 5 minutes)
 #
-# Custom domain (after purchasing getcurrentai.com):
-#   1. Add CNAME file:  echo "getcurrentai.com" > CNAME  then re-run ./deploy.sh
-#   2. In GitHub repo Settings → Pages → Custom domain: type getcurrentai.com
+# Custom domain (after purchasing baxter.solutions):
+#   1. Add CNAME file:  echo "baxter.solutions" > CNAME  then re-run ./deploy.sh
+#   2. In GitHub repo Settings → Pages → Custom domain: type baxter.solutions
 #   3. At your DNS registrar, add:
 #        A records pointing to GitHub Pages IPs:
 #          185.199.108.153
@@ -60,7 +60,7 @@ echo "==> Creating GitHub repo: $REPO_NAME ..."
 if gh repo view "$GH_USER/$REPO_NAME" &>/dev/null; then
   echo "    Repo already exists — will push to it."
 else
-  gh repo create "$REPO_NAME" --public --description "Get Current AI — website" 2>/dev/null || true
+  gh repo create "$REPO_NAME" --public --description "Baxter Solutions — website" 2>/dev/null || true
 fi
 
 # Set remote (replace if it already exists)
@@ -70,7 +70,7 @@ git remote add origin "https://github.com/$GH_USER/$REPO_NAME.git"
 echo "==> Staging and committing files..."
 git add -A
 git diff --cached --quiet && echo "    Nothing to commit." || \
-  git commit -m "Deploy Get Current AI website — $(date +%Y-%m-%d)"
+  git commit -m "Deploy Baxter Solutions website — $(date +%Y-%m-%d)"
 
 echo "==> Pushing to GitHub..."
 git push -u origin "$BRANCH" --force
@@ -108,7 +108,7 @@ for i in $(seq 1 10); do
     echo "====================================================="
     echo ""
     echo "Next steps:"
-    echo "  - Purchase getcurrentai.com and follow the custom-domain steps in README.md"
+    echo "  - Purchase baxter.solutions and follow the custom-domain steps in README.md"
     echo "  - To redeploy after changes:  ./deploy.sh  (from this directory)"
     exit 0
   fi

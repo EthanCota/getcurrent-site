@@ -1,5 +1,5 @@
 /**
- * Get Current AI — ROI Calculators
+ * Baxter Solutions — ROI Calculators
  * Two calculators, both vanilla JS, zero dependencies, instant client-side.
  *
  * 1. Restaurant Voice AI Calculator
@@ -121,7 +121,7 @@ function initRestaurantCalc() {
     '      <input id="r-covers-per-res" class="roi-calc__input" type="number" min="1" value="2.5">',
     '    </div>',
 
-    '    <div class="roi-calc__section-label">Voice AI cost (Get Current AI)</div>',
+    '    <div class="roi-calc__section-label">Voice AI cost (Baxter Solutions)</div>',
 
     '    <div class="roi-calc__row">',
     '      <label for="r-setup" class="roi-calc__label">',
@@ -334,7 +334,7 @@ function initVACalc() {
     '      <input id="v-retrain-wks" class="roi-calc__input" type="number" min="0" value="3">',
     '    </div>',
 
-    '    <div class="roi-calc__section-label">Build + automation cost (Get Current AI)</div>',
+    '    <div class="roi-calc__section-label">Build + automation cost (Baxter Solutions)</div>',
 
     '    <div class="roi-calc__row">',
     '      <label for="v-build-cost" class="roi-calc__label">',
