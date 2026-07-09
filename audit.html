@@ -168,7 +168,10 @@
     .timeline-item__dot--teal  { background-color: var(--color-teal); }
     .timeline-item__dot--green { background-color: var(--color-green); }
     .timeline-item__dot--sand  { background-color: var(--color-sand); }
-    .timeline-item__content {}
+    .timeline-item__content {
+      min-width: 0;
+      flex: 1;
+    }
     .timeline-item__when {
       font-size: var(--text-xs);
       font-weight: var(--weight-semibold);
@@ -432,7 +435,7 @@
           <p class="text-lead">Two phases. First the call, then the async work. You don't need to prepare anything — describe your operations as they exist today.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start;">
+        <div class="timeline-columns" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start;">
           <div>
             <h3 style="font-family: var(--font-body); font-size: var(--text-xs); font-weight: var(--weight-semibold); letter-spacing: var(--tracking-wider); text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-8);">Phase 1 — The 90-Minute Call</h3>
             <div class="timeline" aria-label="Discovery call agenda">

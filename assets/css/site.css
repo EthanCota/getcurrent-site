@@ -467,8 +467,12 @@ code, .mono {
   height: 22px;
 }
 
-@media (max-width: 768px) {
+.site-nav__menu { display: none; }
+
+@media (max-width: 900px) {
   .site-nav__toggle { display: flex; }
+
+  #nav-links { display: none; }
 
   .site-nav__menu {
     display: none;
@@ -615,6 +619,13 @@ code, .mono {
   white-space: nowrap;
   line-height: 1;
   min-height: var(--tap-target-min);    /* 44px touch target */
+}
+
+@media (max-width: 480px) {
+  .btn {
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 /* Primary — Marine #1A6B8A; white at 14px/600 passes AA */
@@ -1415,6 +1426,7 @@ code, .mono {
   .contact-grid { grid-template-columns: 1fr; gap: var(--space-10); }
 }
 
+.contact-info { min-width: 0; }
 .contact-info h2 { color: var(--color-white); margin-bottom: var(--space-6); }
 .contact-info .text-lead { color: rgba(255,255,255,0.72); margin-bottom: var(--space-8); }
 
@@ -1462,6 +1474,7 @@ code, .mono {
   padding: var(--space-8);
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--color-border);
+  min-width: 0;
 }
 
 .contact-form-card h3 {

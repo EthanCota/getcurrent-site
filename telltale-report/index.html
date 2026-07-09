@@ -171,7 +171,7 @@
           What&rsquo;s in the report
         </h2>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+        <div id="inside-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
 
           <div>
             <h3 style="font-size: var(--text-base); font-weight: var(--weight-semibold); color: var(--color-heading); margin-bottom: var(--space-3);">Company intelligence</h3>
@@ -217,6 +217,7 @@
         <style>
           @media (max-width: 640px) {
             #inside-grid { grid-template-columns: 1fr !important; }
+            #pricing-grid { grid-template-columns: 1fr !important; }
           }
         </style>
       </div>
@@ -296,7 +297,7 @@
           to the email you provide at checkout.
         </p>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+        <div id="pricing-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
 
           <!-- STANDARD -->
           <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6);">
