@@ -4,7 +4,7 @@ Static HTML/CSS site. No build step, no framework, no bundler.
 
 **Brand:** Baxter Solutions (formerly "Get Current AI" — renamed 2026-07-08; offer ladder, pricing, and ICP are unchanged, see `decisions/2026-07-08-baxter-solutions-scope`). Underlying GitHub repo is still named `getcurrent-site` (renaming the repo is an infra decision, out of scope for this branding pass — see `BRANDING-AUDIT.md`).
 
-**Live URL:** `https://baxter.solutions` (custom domain configured in GitHub Pages settings; DNS not yet pointed there — see `BLOCKERS.md`). Fallback while DNS is dark: `https://ethancota.github.io/getcurrent-site/`.
+**Live URL:** `https://baxter.solutions` (custom domain configured in GitHub Pages settings; DNS not yet pointed there). Note: with the `CNAME` file committed, GitHub Pages now 301-redirects the `.../github.io/getcurrent-site/` URL to `baxter.solutions`, so that fallback won't work as a public preview until DNS is live either — use local preview (below) to check the site in the meantime.
 
 **Design system: v3 (2026-06-12).** Human, warm, editorial — Perplexity/Anthropic school. Fonts: Lora (display serif) + Source Sans 3 (body) + JetBrains Mono (code). Base: 18px. Parchment (#FAF7F2) page bg. Marine (#1A6B8A) accent. Zero glassmorphism — all glass/blur removed. Hero uses warm horizon gradient only. See brand/BRAND-KIT.md v3 for full token reference (that doc still uses the old brand name in places — not updated as part of this pass, it lives outside `website/`).
 
