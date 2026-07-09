@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://getcurrentai.com/sitemap.xml
+Sitemap: https://baxter.solutions/sitemap.xml

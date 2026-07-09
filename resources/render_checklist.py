@@ -21,13 +21,13 @@ def main():
     md_text = MD_FILE.read_text(encoding="utf-8")
 
     # Build HTML with brand CSS — override draft-banner with a clean cover line
-    html = md_to_html(md_text, "The SD SMB Owner's AI-Automation Audit Checklist — Get Current AI")
+    html = md_to_html(md_text, "The SD SMB Owner's AI-Automation Audit Checklist — Baxter Solutions")
     # Remove draft banner injected by md_to_html
     html = html.replace(
         '<div class="draft-banner">DRAFT — Engine-generated. Founder review required before sending.</div>',
         '<div style="text-align:center;padding:0.6rem 1rem;background:var(--brand-accent-lt);'
         'border-radius:4px;margin-bottom:1.5rem;font-size:0.9rem;color:var(--brand-accent);">'
-        'Get Current AI · Free Resource · getcurrentai.com</div>',
+        'Baxter Solutions · Free Resource · baxter.solutions</div>',
     )
     HTML_FILE.write_text(html, encoding="utf-8")
     print(f"HTML: {HTML_FILE}")

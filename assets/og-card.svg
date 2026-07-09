@@ -24,27 +24,30 @@
         fill="#0F4A63"
         style="text-transform: uppercase;">SAN DIEGO · BUSINESS AUTOMATION</text>
 
-  <!-- Wordmark: Get Current AI — serif display -->
-  <text x="80" y="298"
+  <!-- Wordmark: Baxter Solutions — serif display. Font-size reduced from the old
+       72px (sized for the shorter pre-rebrand name) to 54px so "Baxter Solutions"
+       comfortably clears the right-side card (card starts x=790; wordmark at 54px
+       ends well under x=700) instead of clipping at social-preview width. -->
+  <text x="80" y="284"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="72" font-weight="700"
-        fill="#1C1A16" letter-spacing="-0.01em">Get Current AI</text>
+        font-size="54" font-weight="700"
+        fill="#1C1A16" letter-spacing="-0.01em">Baxter Solutions</text>
 
   <!-- Tagline — two lines, generous size -->
-  <text x="80" y="364"
+  <text x="80" y="340"
         font-family="Arial, Helvetica, sans-serif"
         font-size="26" font-weight="400"
         fill="#3D3830">Business automation built for real operators.</text>
-  <text x="80" y="400"
+  <text x="80" y="372"
         font-family="Arial, Helvetica, sans-serif"
         font-size="26" font-weight="400"
         fill="#3D3830">Systems you own.</text>
 
   <!-- Domain -->
-  <text x="80" y="480"
+  <text x="80" y="446"
         font-family="Arial, Helvetica, sans-serif"
         font-size="21" font-weight="600"
-        fill="#0F4A63" letter-spacing="0.04em">getcurrentai.com</text>
+        fill="#0F4A63" letter-spacing="0.04em">baxter.solutions</text>
 
   <!-- Right side: solid warm-white card with visible border — no glass -->
   <rect x="790" y="200" width="340" height="200" rx="8"

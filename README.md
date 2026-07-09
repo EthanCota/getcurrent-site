@@ -1,16 +1,16 @@
-# Get Current AI — Website
+# Baxter Solutions — Website
 
 Static HTML/CSS site. No build step, no framework, no bundler.
 
-**Live URL:** blocked on `gh auth login` — run `./deploy.sh` after authenticating.
+**Brand:** Baxter Solutions (formerly "Get Current AI" — renamed 2026-07-08; offer ladder, pricing, and ICP are unchanged, see `decisions/2026-07-08-baxter-solutions-scope`). Underlying GitHub repo is still named `getcurrent-site` (renaming the repo is an infra decision, out of scope for this branding pass — see `BRANDING-AUDIT.md`).
 
-**Design system: v3 (2026-06-12).** Human, warm, editorial — Perplexity/Anthropic school. Fonts: Lora (display serif) + Source Sans 3 (body) + JetBrains Mono (code). Base: 18px. Parchment (#FAF7F2) page bg. Marine (#1A6B8A) accent. Zero glassmorphism — all glass/blur removed. Hero uses warm horizon gradient only. See brand/BRAND-KIT.md v3 for full token reference.
+**Live URL:** `https://baxter.solutions` (custom domain configured in GitHub Pages settings; DNS not yet pointed there — see `BLOCKERS.md`). Fallback while DNS is dark: `https://ethancota.github.io/getcurrent-site/`.
+
+**Design system: v3 (2026-06-12).** Human, warm, editorial — Perplexity/Anthropic school. Fonts: Lora (display serif) + Source Sans 3 (body) + JetBrains Mono (code). Base: 18px. Parchment (#FAF7F2) page bg. Marine (#1A6B8A) accent. Zero glassmorphism — all glass/blur removed. Hero uses warm horizon gradient only. See brand/BRAND-KIT.md v3 for full token reference (that doc still uses the old brand name in places — not updated as part of this pass, it lives outside `website/`).
 
 **v2 superseded (2026-06-12):** Inter / ice-blue / glassmorphism / electric-sky accent all removed. All 6 pages + site.css updated to v3 tokens.
 
-**v3 verified (2026-06-12):** Playwright full-page screenshots at 1280px + 390px for all 7 pages in screenshots/v3/. Zero console errors across all pages. Zero backdrop-filter/blur() declarations in CSS or HTML. Contrast: body text 10.88:1 (AAA), H1 on hero 16.15:1 (AAA), CTA button 5.98:1 (AA). ROI calculators verified — restaurant calc: $70,200 output at 50 missed calls/wk; VA calc: live payback section at $1,200/mo input. All page-specific CSS classes defined inline in source page. Prices match Offer Ladder v1 exactly. Niche balance: Standard Audit targets "Any SD small business"; restaurant is example vertical, not brand identity.
-**Expected live URL:** `https://<your-gh-username>.github.io/getcurrent-site/`
-**Custom domain target:** `https://getcurrentai.com` (once purchased and DNS configured)
+**v3 verified (2026-06-12):** Playwright full-page screenshots at 1280px + 390px for all 7 pages in screenshots/v3/. Zero console errors across all pages. Zero backdrop-filter/blur() declarations in CSS or HTML. Contrast: body text 10.88:1 (AAA), H1 on hero 16.15:1 (AAA), CTA button 5.98:1 (AA). ROI calculators verified — restaurant calc: $70,200 output at 50 missed calls/wk; VA calc: live payback section at $1,200/mo input. All page-specific CSS classes defined inline in source page. Prices match Offer Ladder v1 exactly. Niche balance: Standard Audit targets "Any SD small business"; restaurant is example vertical, not brand identity. **Screenshots are stale post-rebrand (still show pre-rebrand copy, see brand note above) — refresh once the live domain is up, see `BRANDING-AUDIT.md`.**
 
 ---
 
@@ -31,7 +31,7 @@ website/
       site.css          Single stylesheet — design tokens v3 + all global components
     js/
       roi-calc.js       Vanilla JS ROI calculators (restaurant + VA TCO)
-  sitemap.xml           Sitemap for getcurrentai.com (includes thank-you.html)
+  sitemap.xml           Sitemap for baxter.solutions (includes thank-you.html)
   robots.txt            robots.txt pointing to sitemap
   deploy.sh             One-command deploy script (requires gh auth login first)
   screenshots/          Playwright verification screenshots
@@ -71,36 +71,28 @@ The script force-pushes to main and Pages redeploys automatically (typically 30�
 
 ---
 
-## Custom Domain Swap (when getcurrentai.com is purchased)
+## Custom Domain (baxter.solutions)
 
-1. Create a `CNAME` file in this directory:
-   ```sh
-   echo "getcurrentai.com" > "/Users/baxter/claude/software projects/agency/website/CNAME"
-   ```
+Status as of this branding pass: `baxter.solutions` is already purchased, the GitHub Pages
+custom domain is already configured (`gh api repos/EthanCota/getcurrent-site/pages` shows
+`cname: baxter.solutions`), and a `CNAME` file is now committed in this directory. Canonical
+URLs, OG tags, and JSON-LD across all pages already point at `https://baxter.solutions`.
 
-2. Run `./deploy.sh` to push the CNAME file.
+**What's still outstanding is DNS, not this repo** — see `/Users/baxter/workspace/BLOCKERS.md`
+and the runbook at `agents/handoffs/2026-07-08-baxter-solutions-ready-to-execute.md` for the
+exact records (4 apex A records to GitHub Pages IPs, `www` CNAME, email forwarding, then the
+HTTPS-enforce flip). That's a Dynadot/DNS action, out of scope for a branding-content pass and
+explicitly not touched here.
 
-3. In the GitHub repo Settings → Pages → Custom domain: type `getcurrentai.com` and save.
+If the domain or GitHub username ever changes again, the full swap is:
 
-4. At your DNS registrar, add:
-   - Four A records pointing `@` to GitHub Pages IPs:
-     ```
-     185.199.108.153
-     185.199.109.153
-     185.199.110.153
-     185.199.111.153
-     ```
-   - One CNAME record: `www` → `<your-gh-username>.github.io`
-
-5. Wait for DNS propagation (15 min–2 hrs). Then in the repo Pages settings,
-   tick "Enforce HTTPS." Certificate provisioning takes ~15 additional minutes.
-
-6. Update canonical URLs in all HTML files from the github.io URL to `getcurrentai.com`:
-   ```sh
-   find "/Users/baxter/claude/software projects/agency/website" -name "*.html" \
-     -exec sed -i '' 's|https://[^.]*\.github\.io/getcurrent-site|https://getcurrentai.com|g' {} \;
-   ```
-   Then redeploy: `./deploy.sh`
+1. Update (or create) the `CNAME` file in this directory with the new domain.
+2. In the GitHub repo Settings → Pages → Custom domain: type the new domain and save.
+3. At the DNS registrar, add four A records for `@` to the GitHub Pages IPs
+   (`185.199.108.153` / `.109.153` / `.110.153` / `.111.153`) and a `www` CNAME to
+   `<github-username>.github.io`.
+4. Wait for DNS propagation, then tick "Enforce HTTPS" in Pages settings once the cert is issued.
+5. Update canonical/OG/JSON-LD URLs in all HTML files and redeploy.
 
 ---
 
@@ -126,7 +118,7 @@ These must be resolved before the site is client-facing:
 | `index.html` contact section | `[VERIFY — add phone once business line acquired]` | Replace with phone number |
 | `about.html` contact section | Same phone placeholder | Same |
 | `audit.html` calendar block | Calendar embed placeholder | Replace with Calendly or Cal.com link |
-| All forms | `action="mailto:hello@getcurrentai.com"` | Replace with Formspree/Basin endpoint |
+| All forms | `action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID"` | Replace with real Formspree/Basin endpoint |
 
 ---
 
@@ -150,9 +142,19 @@ Alternative: **Basin** (basin.com) — change `action` to Basin endpoint; `_next
 
 ---
 
-## Name-Swap Procedure (if brand name changes)
+## Name-Swap Procedure (if brand name changes again)
+
+The site's most recent rename (2026-07-08, see brand note at the top of this file) was a
+branding-only pass — offers, pricing, and ICP unchanged. See `BRANDING-AUDIT.md` in this
+directory for the full list of what was touched. If the brand name changes again, the
+equivalent sweep is:
 
 ```sh
-find "/Users/baxter/claude/software projects/agency/website" -type f \( -name "*.html" -o -name "*.css" \) \
-  -exec sed -i '' 's/Get Current AI/NEW NAME HERE/g; s/getcurrentai\.com/newdomain.com/g' {} \;
+find "/Users/baxter/claude/software projects/agency/website" -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" \) \
+  -exec sed -i '' 's/Baxter Solutions/NEW NAME HERE/g; s/BAXTER SOLUTIONS/NEW NAME CAPS/g; s/baxter\.solutions/newdomain.tld/g' {} \;
 ```
+
+Then hand-check (this list bit us last time — a mechanical sed alone is not enough):
+- `assets/og-card.svg` and `assets/favicon.svg` (name is in `<text>`/path elements, not caught by the sed above)
+- `CNAME` file
+- Any tagline or founder-bio copy that names the brand in prose rather than as a literal string match

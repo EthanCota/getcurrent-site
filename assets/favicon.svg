@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Background square with modest corner radius -->
-  <!-- v3: Parchment #FAF7F2 background, Warm Ink #1C1A16 C-body, Marine #1A6B8A arrow -->
+  <!-- v4: Baxter Solutions monogram (rebrand 2026-07-08, replaces the prior name-pun C+arrow mark).
+       Parchment #FAF7F2 background, Warm Ink #1C1A16 "B" glyph, Marine #1A6B8A accent bar —
+       same v3 palette, reusing the accent-bar motif already used on the OG card / nav border. -->
   <rect width="32" height="32" rx="5" fill="#FAF7F2"/>
-  <!-- C body — Warm Ink #1C1A16 -->
-  <path d="M22 10.5 C22 10.5 19 8 14.5 8 C10 8 7 11.5 7 16 C7 20.5 10 24 14.5 24 C19 24 22 21.5 22 21.5"
-        stroke="#1C1A16" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <!-- Current-flow arrow diagonal — Marine #1A6B8A -->
-  <line x1="20" y1="12" x2="25" y2="7" stroke="#1A6B8A" stroke-width="2.5" stroke-linecap="round"/>
-  <polyline points="21,7 25,7 25,11" stroke="#1A6B8A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- "B" glyph — bold serif, Warm Ink -->
+  <text x="16" y="21"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="18" font-weight="700"
+        fill="#1C1A16"
+        text-anchor="middle">B</text>
+  <!-- Marine accent bar beneath the glyph -->
+  <rect x="9" y="24" width="14" height="2.5" rx="1.25" fill="#1A6B8A"/>
 </svg>
