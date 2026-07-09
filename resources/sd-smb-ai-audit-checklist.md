@@ -130,7 +130,7 @@ Count the checked boxes in each section:
 
 **Option B — Get a second opinion.** The Baxter Solutions Operations Audit ($1,500) is a 90-minute discovery call plus a written report. You'll get a prioritized list of automation opportunities, rough ROI estimates for each, and a named-stack recommendation (what to build with, in what order). No obligation to build anything. If the math doesn't work for your business, we'll tell you.
 
-To book the audit: **baxter.solutions/audit** or email **hello@baxter.solutions**
+To book the audit: **baxter.solutions/audit** or email **ethan@baxter.solutions**
 
 ---
 

@@ -27,7 +27,7 @@
 #   1. CNAME file in this directory should already read "baxter.solutions" — if not:
 #      echo "baxter.solutions" > CNAME  then re-run ./deploy.sh
 #   2. In GitHub repo Settings → Pages → Custom domain: confirm it reads baxter.solutions
-#   3. DNS (NOT done by this script — see BLOCKERS.md for current status):
+#   3. DNS (NOT done by this script — status tracked outside this repo):
 #        A records pointing to GitHub Pages IPs:
 #          185.199.108.153
 #          185.199.109.153
@@ -116,7 +116,7 @@ for i in $(seq 1 10); do
     echo ""
     echo "Next steps:"
     echo "  - baxter.solutions is purchased and configured in Pages settings; DNS is the"
-    echo "    remaining gate — see /Users/baxter/workspace/BLOCKERS.md"
+    echo "    remaining gate (see README.md Custom Domain section for status)"
     echo "  - To redeploy after changes:  ./deploy.sh  (from this directory)"
     exit 0
   fi

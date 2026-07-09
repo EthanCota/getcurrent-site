@@ -78,11 +78,10 @@ custom domain is already configured (`gh api repos/EthanCota/getcurrent-site/pag
 `cname: baxter.solutions`), and a `CNAME` file is now committed in this directory. Canonical
 URLs, OG tags, and JSON-LD across all pages already point at `https://baxter.solutions`.
 
-**What's still outstanding is DNS, not this repo** — see `/Users/baxter/workspace/BLOCKERS.md`
-and the runbook at `agents/handoffs/2026-07-08-baxter-solutions-ready-to-execute.md` for the
-exact records (4 apex A records to GitHub Pages IPs, `www` CNAME, email forwarding, then the
-HTTPS-enforce flip). That's a Dynadot/DNS action, out of scope for a branding-content pass and
-explicitly not touched here.
+**What's still outstanding is DNS, not this repo** — see `BLOCKERS.md` in the wider workspace
+for the exact records (4 apex A records to GitHub Pages IPs, `www` CNAME, email forwarding,
+then the HTTPS-enforce flip). That's a DNS-registrar action, out of scope for a branding-content
+pass and explicitly not touched here.
 
 If the domain or GitHub username ever changes again, the full swap is:
 
@@ -150,7 +149,7 @@ directory for the full list of what was touched. If the brand name changes again
 equivalent sweep is:
 
 ```sh
-find "/Users/baxter/claude/software projects/agency/website" -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" \) \
+find /path/to/website -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" \) \
   -exec sed -i '' 's/Baxter Solutions/NEW NAME HERE/g; s/BAXTER SOLUTIONS/NEW NAME CAPS/g; s/baxter\.solutions/newdomain.tld/g' {} \;
 ```
 

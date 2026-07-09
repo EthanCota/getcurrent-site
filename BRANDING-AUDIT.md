@@ -6,7 +6,9 @@
 
 ## Starting state
 
-At the start of this pass the site was still **100% "Get Current AI"** — every page's title, meta description, OG/Twitter tags, JSON-LD, nav wordmark, footer, and copy said "Get Current AI" / `getcurrentai.com`. Zero "Baxter Solutions" references existed anywhere in the tree. (A prior internal note had claimed this rename already shipped; it hadn't — corrected internally, not relevant to this repo's history.)
+At the start of this pass the local working copy was still **100% "Get Current AI"** — every page's title, meta description, OG/Twitter tags, JSON-LD, nav wordmark, footer, and copy said "Get Current AI" / `getcurrentai.com`. Zero "Baxter Solutions" references existed in that checkout.
+
+Partway through, it turned out a separate, concurrent commit on `origin/main` had already done a first-pass mechanical rebrand (plain string substitution, no favicon/OG-card fixes, contact email set to `ethan@baxter.solutions`). This pass had independently picked `hello@baxter.solutions` (matching the old `hello@getcurrentai.com` convention) before discovering that commit. The two histories were reconciled with a merge: the concurrent commit's email choice (`ethan@baxter.solutions`, which matches the already-planned inbox forwarding for this domain, so it'll actually deliver) was kept everywhere; this pass's deeper fixes (favicon redesign, OG-card clipping fix, regenerated checklist PDF, CNAME file, expanded README/deploy.sh notes, this audit doc) were kept on top.
 
 ## What was found (residual old-brand artifacts)
 
@@ -54,7 +56,7 @@ Old-brand strings (`Get Current AI`, `getcurrentai.com`, and case variants) were
 
 ## Flagged (not blocking, picked a sensible default)
 
-- **Contact email**: used `hello@baxter.solutions` throughout (matches the old `hello@getcurrentai.com` convention). Whatever email-forwarding gets configured for `baxter.solutions` should make sure `hello@` is covered, not just a personal-name address — otherwise the site's mailto links won't deliver anywhere once DNS is live.
+- **Contact email**: `ethan@baxter.solutions` is used sitewide (reconciled from the merge above — matches the domain's planned inbox forwarding, so it'll actually deliver once DNS/email is live). Not `hello@`, despite that being the old `hello@getcurrentai.com` convention — deliberate, so mailto links resolve correctly.
 - **Tagline** ("Business automation built for real operators. Systems you own.") — kept as-is; it's brand-name-agnostic and reads fine attached to "Baxter Solutions." Flagging only because no one has explicitly signed off on keeping it — if a Baxter-Solutions-specific tagline is wanted later, this is the string to touch (homepage hero + OG card only).
 - **Repo/domain naming mismatch**: the GitHub repo is still named `getcurrent-site` while the brand and domain are now Baxter Solutions. Cosmetic only, doesn't affect the custom domain once DNS is live — worth a deliberate call at some point on whether to rename it.
 
