@@ -635,11 +635,11 @@
           Get a free 10-minute read of your operation — we'll map exactly which of your processes are automatable and what the realistic time savings look like. No obligation to proceed.
         </p>
 
-        <!-- Form — staged Tally endpoint; swap in real embed ID post-launch -->
+        <!-- Endpoint live: Tally form J9x9VJ (https://tally.so/r/J9x9VJ) -->
         <form
           class="capture-form"
           id="capture-form"
-          action="https://tally.so/r/PLACEHOLDER_TALLY_ID"
+          action="https://tally.so/r/J9x9VJ"
           method="POST"
           novalidate
         >
@@ -894,11 +894,11 @@
           document.getElementById('results-placeholder').classList.add('hidden');
         });
 
-      // Form submit — client-side validation + thank-you state
-      // Note: real Tally endpoint swapped in post-launch (action="https://tally.so/r/PLACEHOLDER_TALLY_ID")
+      // Form submit — client-side validation, then background POST to Tally
       document.getElementById('capture-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
+        const form = document.getElementById('capture-form');
         const name = document.getElementById('cf-name').value.trim();
         const email = document.getElementById('cf-email').value.trim();
 
@@ -917,12 +917,16 @@
         btn.disabled = true;
         btn.textContent = 'Sending…';
 
-        // Staged: in production this form POSTs to Tally.
-        // For now, simulate success after brief delay.
-        setTimeout(() => {
+        // no-cors: Tally accepts the submission but response body isn't readable
+        // from this origin — show the thank-you state once the request settles.
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          mode: 'no-cors'
+        }).finally(() => {
           document.getElementById('capture-form').classList.add('hidden');
           document.getElementById('thankyou-state').style.display = 'block';
-        }, 600);
+        });
       });
 
     })();
